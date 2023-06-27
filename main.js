@@ -134,7 +134,7 @@ const loadProducts = (products) => {
   products.forEach((product) => {
     const template = `
     <article>
-      <div><img class="photos" src="${product.image}" alt="${product.image}"></div>
+      <div><img class="photos" loading=“lazy” src="${product.image}" alt="${product.image}"></div>
        <div class="details">
           <h3 class="title">${product.name}</h3>
           <p class="price">${product.price}€</p>
